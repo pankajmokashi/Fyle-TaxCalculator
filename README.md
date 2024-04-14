@@ -1,4 +1,5 @@
-Fyle - Tax Calculator Web Development Assignment
+Fyle - Tax Calculator Web Development Assignment.
+
 This is a simple web application that calculates taxes based on user input for income, deductions, and age.
 
 Technologies Used:
