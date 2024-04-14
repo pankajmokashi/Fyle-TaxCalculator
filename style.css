@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.calculator-div {
+    padding: 4rem 3rem 3rem;
+    width: calc(500px - 6rem);
+    border: 1px solid #707a82;
+}
+
+.calculator-div form {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-container {
+    flex-direction: column;
+}
+
+.input-container label {
+    align-items: center;
+    gap: 0.1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #707a82;
+}
+
+.material-symbols-outlined {
+    font-size: 1.1rem !important;
+    color: #ccd5df;
+}
+
+.input-container .input-field {
+    align-items: center;
+    border: 1px solid #d1d8df;
+}
+
+.input-field input,
+.input-field select {
+    flex-grow: 1;
+    height: 2.2rem;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+.input-container input::placeholder {
+    font-weight: 500;
+    color: #d1d8df;
+    opacity: 1;
+}
+
+.error-tooltip {
+    position: relative;
+    display: none;
+    cursor: default;
+    
+}
+
+.error-tooltip .material-symbols-outlined{
+    color: red;
+}
+
+.error-tooltip .error {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -117px;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+}
+
+.error-tooltip .error::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 75%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4c5d6b transparent transparent transparent;
+}
+
+.error-tooltip:hover .error {
+    visibility: visible;
+    background-color: #4c5d6b;
+}
+
+.submit-button {
+    margin-top: 1.2rem;
+    height: 2.2rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #6559f5;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+
+
+.calculator-modal {
+    border: 1px solid #707a82;
+    width: 700px;
+    height: 320px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.title,
+.income-val {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.close-modal {
+    height: 2rem;
+    color: white;
+    background-color: #6559f5;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.info-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.info-tooltip .tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #4c5d6b;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    /* left: 10%; */
+    margin-left: -95px;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+}
+
+.info-tooltip .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4c5d6b transparent transparent transparent;
+}
+
+.info-tooltip:hover .tooltip {
+    visibility: visible;
+}
+
+.age-error {
+    color: red;
+    display: none;
+    font-size: 0.8rem;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .calculator-modal {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .calculator-div {
+        padding: 4rem 2rem 3rem;
+        width: calc(100% - 4rem);
+    }
+
+    .input-container label {
+        font-size: 0.9rem;
+    }
+
+    .info-tooltip .tooltip {
+        font-size: 0.6rem;
+    }
+
+    .submit-button {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .calculator-div {
+        padding: 2rem 2rem;
+    }
+
+    .input-container label {
+        font-size: 0.8rem;
+    }
+
+    .title,
+    .income-val {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .calculator-modal {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .calculator-div {
+        padding: 2rem 0.5rem;
+        margin-bottom: 3rem;
+        width: calc(100% - 1rem);
+    }
+}

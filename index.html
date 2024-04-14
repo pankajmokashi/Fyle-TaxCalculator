@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container flex">
+      <div id="calculator-div" class="calculator-div">
+        <form id="calculator-form" class="flex">
+          <div class="input-container flex">
+            <label class="flex" for="annual-income"
+              ><span>Enter gross annual income</span>
+              <div class="info-tooltip">
+                <span id="info-annual flex" class="material-symbols-outlined">
+                  help
+                </span>
+                <div class="tooltip">
+                  Gross annual income is your total salary in a year before any
+                  deductions
+                </div>
+              </div></label
+            >
+            <div id="income-error" class="age-error">
+              This field is mandatory
+            </div>
+            <div class="input-field flex">
+              <input
+                type="text"
+                name="annual-income"
+                id="annual-income"
+                placeholder="Enter gross annual income"
+              />
+              <div class="error-tooltip">
+                <span id="error-annual" class="material-symbols-outlined">
+                  error
+                </span>
+                <div class="error">Please enter numbers only</div>
+              </div>
+            </div>
+          </div>
+          <div class="input-container flex">
+            <label class="flex" for="extra-income"
+              ><span>Enter extra income</span>
+              <div class="info-tooltip">
+                <span id="input-extra" class="material-symbols-outlined">
+                  help
+                </span>
+                <div class="tooltip">
+                  Extra income is money that you earn additional to your salary
+                </div>
+              </div></label
+            >
+            <div class="input-field flex">
+              <input
+                type="text"
+                name="extra-income"
+                id="extra-income"
+                placeholder="Enter extra income"
+              />
+              <div class="error-tooltip">
+                <span id="error-extra" class="material-symbols-outlined">
+                  error
+                </span>
+                <div class="error">Please enter numbers only</div>
+              </div>
+            </div>
+          </div>
+          <div class="input-container flex">
+            <label class="flex" for="age"
+              ><span>Enter age group</span>
+              <div class="info-tooltip">
+                <span id="info-age" class="material-symbols-outlined">
+                  help
+                </span>
+                <div class="tooltip">Select in which age group you are in</div>
+              </div></label
+            >
+            <div id="age-error" class="age-error">This field is mandatory</div>
+            <div class="input-field flex">
+              <select name="age" id="age">
+                <option value="" selected disabled hidden>
+                  Select age group
+                </option>
+                <option value="39">&lt; 40</option>
+                <option value="50">&gt;= 40 & &lt; 60</option>
+                <option value="60">&gt;= 60</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-container flex">
+            <label class="flex" for="deductions"
+              ><span>Enter total applicable deductions</span>
+              <div class="info-tooltip">
+                <span id="info-deductions" class="material-symbols-outlined">
+                  help
+                </span>
+                <div class="tooltip">
+                  An amount you subtract from your income so you don't pay tax
+                  on it
+                </div>
+              </div></label
+            >
+            <div class="input-field flex">
+              <input
+                type="text"
+                name="deductions"
+                id="deductions"
+                placeholder="Enter total applicable deductions"
+              />
+              <div class="error-tooltip">
+                <span id="error-deductions" class="material-symbols-outlined">
+                  error
+                </span>
+                <div class="error">Please enter numbers only</div>
+              </div>
+            </div>
+          </div>
+          <button id="submit-form" class="submit-button">Submit</button>
+        </form>
+      </div>
+      <div id="calculator-modal" class="calculator-modal flex">
+        <div class="title">Your Overall income Will Be</div>
+        <div id="income" class="income-val">Rs. 0</div>
+        <div id="tax" class="tax">after tax deduction of Rs. 0</div>
+        <button id="close-modal" class="close-modal">Close</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
