@@ -2,9 +2,11 @@
 
 Design a website that allows for tax calculation based on a users input.
 
-![Screenshot 2024-04-07 at 12.06.20 AM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/983632c5-ee66-4f64-a1a6-b3eeff04ddb8/b2775372-5b3a-462f-b309-5e3e512f457a/Screenshot_2024-04-07_at_12.06.20_AM.png)
+<img width="654" alt="Screenshot 2024-04-07 at 12 06 20 AM" src="https://github.com/pankajmokashi/Fyle-TaxCalculator/assets/127533657/33749f6e-087f-432d-ac36-b77d6484be5a">
 
-![Screenshot 2024-04-07 at 12.06.37 AM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/983632c5-ee66-4f64-a1a6-b3eeff04ddb8/24606b4a-5b8a-447c-8655-67dab0a7c472/Screenshot_2024-04-07_at_12.06.37_AM.png)
+
+<img width="647" alt="Screenshot 2024-04-07 at 12 06 37 AM" src="https://github.com/pankajmokashi/Fyle-TaxCalculator/assets/127533657/50bafffe-9956-42e7-bfe9-4a201f47c830">
+
 
 ### References & Requirements
 
